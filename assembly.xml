@@ -1,0 +1,15 @@
+<assembly>
+    <id>tar-gz-dist</id>
+
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+    <includeBaseDirectory>true</includeBaseDirectory>
+
+    <fileSets>
+        <fileSet>
+            <directory>${outputDirectory}/apache-tomcat-${tomcat.version}</directory>
+            <outputDirectory></outputDirectory>
+        </fileSet>
+    </fileSets>
+</assembly>
