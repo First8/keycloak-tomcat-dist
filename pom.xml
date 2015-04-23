@@ -388,9 +388,15 @@
                 <configuration>
                     <file>${configFile}</file>
                     <replacements>
+                        <!-- fix-data-source -->
                         <replacement>
                             <token>java:jboss/datasources/KeycloakDS</token>
                             <value>java:/comp/env/jdbc/KeycloakDS</value>
+                        </replacement>
+                        <!-- Set Tomcat configuration-dir -->
+                        <replacement>
+                            <token>jboss.server.config.dir}</token>
+                            <value>catalina.home}/conf</value>
                         </replacement>
                     </replacements>
                 </configuration>
