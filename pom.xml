@@ -10,6 +10,7 @@
     <artifactId>keycloak-tomcat-dist</artifactId>
     <packaging>pom</packaging>
     <name>Tomcat 8 with Keycloack</name>
+    <version>${project.parent.version}-1.0.3</version>
     <description/>
     <properties>
         <!-- Versions -->
@@ -71,7 +72,7 @@
                                 <artifactItem>
                                     <groupId>org.keycloak</groupId>
                                     <artifactId>keycloak-server</artifactId>
-                                    <version>${project.version}</version>
+                                    <version>${project.parent.version}</version>
                                     <type>war</type>
                                     <outputDirectory>${outputDirectoryForWar}</outputDirectory>
                                 </artifactItem>
