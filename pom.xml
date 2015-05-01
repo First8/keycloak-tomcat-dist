@@ -10,7 +10,7 @@
     <artifactId>keycloak-tomcat-dist</artifactId>
     <packaging>pom</packaging>
     <name>Tomcat 8 with Keycloack</name>
-    <version>${project.parent.version}-1.0.3</version>
+    <version>${project.parent.version}-1.0.4</version>
     <description/>
     <properties>
         <!-- Versions -->
@@ -92,21 +92,29 @@
                                     <groupId>org.apache.httpcomponents</groupId>
                                     <artifactId>httpclient</artifactId>
                                     <version>4.2.6</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${outputDirectoryForLibs}</outputDirectory>
                                 </dependency>
                                 <dependency>
                                     <groupId>org.apache.httpcomponents</groupId>
                                     <artifactId>httpcore</artifactId>
                                     <version>4.2.5</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${outputDirectoryForLibs}</outputDirectory>
                                 </dependency>
                                 <dependency>
                                     <groupId>commons-logging</groupId>
                                     <artifactId>commons-logging</artifactId>
                                     <version>1.1.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${outputDirectoryForLibs}</outputDirectory>
                                 </dependency>
                                 <dependency>
                                     <groupId>commons-io</groupId>
                                     <artifactId>commons-io</artifactId>
                                     <version>2.1</version>
+                                    <type>jar</type>
+                                    <outputDirectory>${outputDirectoryForLibs}</outputDirectory>
                                 </dependency>
                                 <!-- Mimic JBoss 6.2 -->
                                 <artifactItem>
